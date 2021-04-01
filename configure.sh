@@ -39,9 +39,9 @@ for file in $files ; do
     echo "Updating file $file"
     temp_file="$file.temp"
     < "$file" \
-     sed "s/:name/$package_name/g" \
+    sed "s/:namespace/$class_name/g" \
+    | sed "s/:name/$package_name/g" \
     | sed "s/:description/$package_name/g" \
-    | sed "s/:namespace/$class_name/g" \
     | sed "/^\*\*Note:\*\* Run/d" \
     > "$temp_file"
     rm -f "$file"
