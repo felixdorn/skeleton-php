@@ -12,9 +12,9 @@
         "php": "^7.4"
     },
     "require-dev": {
-        "pestphp/pest": "^0.3.8",
+        "pestphp/pest": "^1",
         "friendsofphp/php-cs-fixer": "^2.16.4",
-        "phpstan/phpstan": "^0.12.48",
+        "phpstan/phpstan": "^1",
         "symfony/var-dumper": "^5.2.0"
     },
     "autoload": {
