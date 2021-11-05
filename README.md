@@ -1,7 +1,7 @@
 # :name
 
-[![Tests](https://github.com/felixdorn/:name/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/felixdorn/:name/actions/workflows/tests.yml)
-[![Formats](https://github.com/felixdorn/:name/actions/workflows/formats.yml/badge.svg?branch=master)](https://github.com/felixdorn/:name/actions/workflows/formats.yml)
+[![Tests](https://github.com/felixdorn/:name/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/felixdorn/:name/actions/workflows/tests.yml)
+[![Formats](https://github.com/felixdorn/:name/actions/workflows/formats.yml/badge.svg?branch=main)](https://github.com/felixdorn/:name/actions/workflows/formats.yml)
 [![Version](https://poser.pugx.org/felixdorn/:name/version)](//packagist.org/packages/felixdorn/:name)
 [![Total Downloads](https://poser.pugx.org/felixdorn/:name/downloads)](//packagist.org/packages/felixdorn/:name)
 [![License](https://poser.pugx.org/felixdorn/:name/license)](//packagist.org/packages/felixdorn/:name)
