@@ -41,7 +41,7 @@ for file in $files ; do
     < "$file" \
     sed "s/:namespace/$class_name/g" \
     | sed "s/:name/$package_name/g" \
-    | sed "s/:description/$package_name/g" \
+    | sed "s/:description/$package_description/g" \
     | sed "/^\*\*Note:\*\* Run/d" \
     > "$temp_file"
     rm -f "$file"
