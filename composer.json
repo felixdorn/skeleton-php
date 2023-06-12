@@ -1,5 +1,5 @@
 {
-    "name": "felixdorn/:name",
+    "name": "felixdorn/name",
     "description": ":description",
     "license": "MIT",
     "authors": [
@@ -9,13 +9,13 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.2"
     },
     "require-dev": {
-        "pestphp/pest": "^1",
-        "friendsofphp/php-cs-fixer": "^3",
-        "phpstan/phpstan": "^1",
-        "symfony/var-dumper": "^5.2.0"
+        "laravel/pint": "^1.10",
+        "pestphp/pest": "^2.6",
+        "phpstan/phpstan": "^1.10",
+        "symfony/var-dumper": "^6"
     },
     "autoload": {
         "psr-4": {
@@ -31,11 +31,14 @@
     "prefer-stable": true,
     "config": {
         "sort-packages": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "scripts": {
-        "lint": "php-cs-fixer fix -v",
-        "test:lint": "php-cs-fixer fix -v --dry-run",
+        "lint": "pint",
+        "test:lint": "pint --test",
         "test:types": "phpstan analyse --ansi --memory-limit=-1",
         "test:unit": "pest --colors=always",
         "test": [
