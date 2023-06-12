@@ -8,7 +8,7 @@
 
 ## Installation
 
-> Requires [PHP 8.1+](https://php.net/releases)
+> Requires [PHP 8.2+](https://php.net/releases)
 
 You can install the package via composer:
 
@@ -24,4 +24,4 @@ composer require felixdorn/:name
 composer test
 ```
 
-**:name** was created by **[Félix Dorn](https://twitter.com/afelixdorn)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
+**:name** was created by **[Félix Dorn](https://felixdorn.fr)** under the **[MIT license](https://opensource.org/licenses/MIT)**.
