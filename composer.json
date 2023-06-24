@@ -1,5 +1,5 @@
 {
-    "name": "felixdorn/name",
+    "name": "felixdorn/:name",
     "description": ":description",
     "license": "MIT",
     "authors": [
