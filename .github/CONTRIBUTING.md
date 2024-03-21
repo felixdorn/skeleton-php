@@ -41,7 +41,7 @@ Check types:
 composer test:types
 ```
 
-Unit tests:
+Run unit tests only:
 ```bash
 composer test:unit
 ```
