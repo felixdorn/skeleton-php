@@ -1,4 +1,4 @@
-#!/usr/bin/env /bash
+#!/usr/bin/env bash
 [[ "$0" != "${BASH_SOURCE[0]}" ]] && safe_exit="return" || safe_exit="exit"
 
 script_name=$(basename "$0")
