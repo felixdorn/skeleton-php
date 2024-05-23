@@ -11,17 +11,19 @@
     let pkgs = nixpkgs.legacyPackages.${system}; in
     {
       devShells.default = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [
-              (php83.buildEnv {
-                  extraConfig = ''xdebug.mode=coverage'';
-
-                  extensions = { enabled, all }: enabled ++ (with all; [
-                      xdebug
-                  ]);
-              })
-              php83Packages.composer
-          ];
+          nativeBuildInputs = let
+            php = php83.buildEnv {
+                extraConfig = ''xdebug.mode=coverage'';
+                extensions = { enabled, all }: enabled ++ (with all; [
+                    xdebug
+                ]);
+            };
+           in with pkgs; [
+              php
+              php.packages.composer
+           ];
       };
-    });
+    }
+    );
 }
 
