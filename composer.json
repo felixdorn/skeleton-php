@@ -12,9 +12,9 @@
         "php": "^8.3"
     },
     "require-dev": {
-        "laravel/pint": "^1.14",
-        "pestphp/pest": "^2.34",
-        "phpstan/phpstan": "^1.10",
+        "laravel/pint": "^v1.16",
+        "pestphp/pest": "^v2.34",
+        "phpstan/phpstan": "^1.11",
         "symfony/var-dumper": "^7"
     },
     "autoload": {
