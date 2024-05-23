@@ -12,7 +12,7 @@
     {
       devShells.default = pkgs.mkShell {
           nativeBuildInputs = let
-            php = php83.buildEnv {
+            php = pkgs.php83.buildEnv {
                 extraConfig = ''xdebug.mode=coverage'';
                 extensions = { enabled, all }: enabled ++ (with all; [
                     xdebug
